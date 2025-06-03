@@ -1,0 +1,10 @@
+.main{
+    text-align: center;
+    margin: 2rem;
+}
+.question{
+    color: red;
+}
+.answer{
+    color: green;
+}

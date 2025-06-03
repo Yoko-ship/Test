@@ -1,0 +1,75 @@
+.section{
+    border: 1px solid #ccc;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+.section h2{
+    margin-bottom: 2rem;
+}
+.section ul{
+    list-style: none;
+    transition: all 0.2s ease;
+}
+.section ul li{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 0.4s forwards;
+}
+@keyframes fadeSlideIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.answers,.right,.error{
+    padding: 0.5rem;
+    width: 50%;
+    margin: 0.5rem 0;
+    font-family: inherit;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.answers:hover{
+    background: yellow;
+}
+.right{
+    background-color: green;
+    border: none;
+}
+.right:hover{
+    background-color: green;
+}
+.error,.error:hover{
+    background-color: red;
+}
+
+.next{
+    padding: 0.5rem;
+    font-family: inherit;
+    font-family: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(118, 118, 236);
+    cursor: pointer;
+    width: 20%;
+}
+.startAgain{
+    margin: 2rem;
+}
+.startAgain button{
+    margin: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: blueviolet
+}
